@@ -1,0 +1,28 @@
+package com.jsp.DSA_Java;
+
+public class Check_if_a_number_is_palindrome {
+	
+	public static void main(String[] args) {
+		int num = 121;
+		int orignal = num;
+		int reverse = 0;
+		
+		while(num > 0)
+		{
+			int digit = num % 10;
+			reverse = reverse * 10 + digit;
+			num = num / 10;
+		}
+		
+		
+		if(orignal == reverse)
+		{
+			System.out.println("Palindrome");
+		}
+		else
+		{
+			 System.out.println("Not Palindrome");
+		}
+	}
+
+}
